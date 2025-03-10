@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '30 01 * * *'   # 每天的09:30运行一次（表达式中是UTC时间）
-    - cron: '30 10 * * *'   # 每天的18:30运行一次（表达式中是UTC时间）
+    - cron: '30 00 * * *'   # 每天的08:30运行一次（表达式中是UTC时间）
+    - cron: '30 09 * * *'   # 每天的17:30运行一次（表达式中是UTC时间）
   watch:
     types: started
   # - cron: '0 3,12 * * *'
